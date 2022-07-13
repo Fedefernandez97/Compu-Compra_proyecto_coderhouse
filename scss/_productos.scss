@@ -1,0 +1,153 @@
+$color_1: whitesmoke;
+$background-color_1: #333;
+
+/*index cards*/
+/*ends index cards*/
+main {
+	div {
+		color: $color_1;
+	}
+	section {
+		color: $color_1;
+		article {
+			img {
+				border-width: 2px;
+				border: solid;
+				margin: 20px;
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				border-bottom-left-radius: 5px;
+				border-bottom-right-radius: 5px;
+			}
+		}
+	}
+}
+.populares_titulo {
+	display: flex;
+	flex-direction: column;
+	margin: 20px;
+	text-align: center;
+	padding: 20px;
+	font-size: 35px;
+}
+.destacados_titulo {
+	text-align: center;
+	padding: 20px;
+	font-size: 1.8rem;
+	animation-timing-function: ease-in;
+	animation-delay: 0.25s;
+}
+.card {
+	width: 150px;
+	height: 200px;
+	background-color: $background-color_1;
+	border-radius: 10px;
+	outline: 2px solid rgba(255, 147, 45, .8);
+	box-shadow: 3px 3px 10px rgba(0, 0, 0, .1);
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	&:hover {
+		.card-image {
+			transform: scale(1.15);
+		}
+	}
+}
+.card-image {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transition: transform .75s;
+}
+.productos {
+	animation-delay: 0.20s;
+}
+.juegos_index {
+	&:hover {
+		transform: scale(1.1);
+		cursor: pointer;
+		transition: all 0.5s;
+	}
+}
+.header_img--fluid {
+	width: 100%;
+}
+
+$color_1: whitesmoke;
+$font-family_1: 'Josefin Sans', sans-serif;
+$background-color_1: rgba(255,255,255, 1.0);
+$background-color_2: rgba(0, 0, 0, 0.8);
+$background-color_3: rgba(255, 144, 21, 0.8);
+
+/*productos*/
+#componentes {
+	h1 {
+		#componentes {
+			h2 {
+				text-emphasis: uppercase;
+				font-size: 3rem;
+				text-align: center;
+				padding: 20px 0px;
+				background-color: $background-color_1;
+				font-family: $font-family_1;
+				margin: 20px 0px;
+			}
+		}
+		text-align: center;
+		padding: 20px;
+		background-color: $background-color_2;
+	}
+	.productos {
+		margin: 20px;
+		padding: 10px;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+		figure {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			width: 50%;
+			img {
+				&:hover {
+					transform: translateY(-10px);
+					cursor: pointer;
+					transition: 0.7s;
+				}
+				border-top-left-radius: 5px;
+				border-top-right-radius: 5px;
+				border-bottom-right-radius: 5px;
+				border-bottom-left-radius: 5px;
+			}
+			figcaption {
+				font-size: 2.0rem;
+				color: $color_1;
+				padding: 10px 0px;
+				background-color: $background-color_2;
+			}
+		}
+		p.price {
+			color: $color_1;
+			padding-bottom: 5px;
+			background-color: $background-color_3;
+			font-size: 2rem;
+		}
+	}
+}
+#todaslascategorias {
+	h1 {
+		text-align: center;
+		padding: 20px;
+		background-color: $background-color_2;
+		font-size: 2rem;
+	}
+}
+h2 {
+	text-align: center;
+	padding: 20px;
+	background-color: $background-color_2;
+	font-size: 2rem;
+}

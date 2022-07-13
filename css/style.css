@@ -1,0 +1,363 @@
+@import "https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300&display=swap";
+* {
+  font-family: "Rubik", sans-serif;
+  margin: 0;
+  padding: 0; }
+
+html {
+  font-size: 62.5%; }
+
+h1 {
+  color: whitesmoke; }
+
+h2 {
+  color: whitesmoke; }
+
+h3 {
+  color: whitesmoke; }
+
+h4 {
+  color: whitesmoke; }
+
+.botonera img {
+  width: 70px; }
+
+.navbar .navbar-nav .nav-link {
+  color: whitesmoke;
+  font-size: 2.3rem;
+  margin-right: 60px; }
+  .navbar .navbar-nav .nav-link:hover {
+    color: darkviolet;
+    font-weight: 400; }
+
+.bg-blue {
+  background-color: rgba(255, 113, 21, 0.5); }
+
+.bg-pattern {
+  background-image: url(../img/index/pattern.jpg);
+  background-attachment: fixed; }
+
+header {
+  overflow-x: hidden;
+  background-color: rgba(0, 0, 0, 0.6); }
+
+/*index cards*/
+/*ends index cards*/
+main div {
+  color: whitesmoke; }
+
+main section {
+  color: whitesmoke; }
+  main section article img {
+    border-width: 2px;
+    border: solid;
+    margin: 20px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px; }
+
+.populares_titulo {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  font-size: 35px; }
+
+.destacados_titulo {
+  text-align: center;
+  padding: 20px;
+  font-size: 1.8rem;
+  animation-timing-function: ease-in;
+  animation-delay: 0.25s; }
+
+.card {
+  width: 150px;
+  height: 200px;
+  background-color: #333;
+  border-radius: 10px;
+  outline: 2px solid rgba(255, 147, 45, 0.8);
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  cursor: pointer;
+  overflow: hidden; }
+  .card:hover .card-image {
+    transform: scale(1.15); }
+
+.card-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform .75s; }
+
+.productos {
+  animation-delay: 0.20s; }
+
+.juegos_index:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  transition: all 0.5s; }
+
+.header_img--fluid {
+  width: 100%; }
+
+/*productos*/
+#componentes h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8); }
+  #componentes h1 #componentes h2 {
+    text-emphasis: uppercase;
+    font-size: 3rem;
+    text-align: center;
+    padding: 20px 0px;
+    background-color: white;
+    font-family: "Josefin Sans", sans-serif;
+    margin: 20px 0px; }
+
+#componentes .productos {
+  margin: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center; }
+  #componentes .productos figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; }
+    #componentes .productos figure img {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-bottom-left-radius: 5px; }
+      #componentes .productos figure img:hover {
+        transform: translateY(-10px);
+        cursor: pointer;
+        transition: 0.7s; }
+    #componentes .productos figure figcaption {
+      font-size: 2.0rem;
+      color: whitesmoke;
+      padding: 10px 0px;
+      background-color: rgba(0, 0, 0, 0.8); }
+  #componentes .productos p.price {
+    color: whitesmoke;
+    padding-bottom: 5px;
+    background-color: rgba(255, 144, 21, 0.8);
+    font-size: 2rem; }
+
+#todaslascategorias h1 {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 2rem; }
+
+h2 {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 2rem; }
+
+.contactanos_titulo {
+  margin: 40px;
+  text-align: center;
+  padding: 20px;
+  font-size: 3rem; }
+
+.contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+#contacto .contacto-articulo {
+  text-align: center;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  font-size: 2rem;
+  line-height: 3rem; }
+
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  footer img {
+    display: inline-block;
+    margin: 20px; }
+
+.c-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "header" "main" "contacto" "footer"; }
+
+.botonera {
+  grid-area: nav;
+  grid-area: nav; }
+
+.populares {
+  grid-area: header; }
+
+.destacados {
+  grid-area: main; }
+
+.contacto {
+  grid-area: contacto; }
+
+.footer {
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem;
+  grid-area: footer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.5rem; }
+
+.pie_icon--sm {
+  width: 60px;
+  width: 60px; }
+
+.pie_icon--sm2 {
+  width: 80%;
+  width: 80%; }
+
+.c-grid2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: "nav" "header" "main" "footer"; }
+
+.selecciones-mensuales {
+  grid-area: header; }
+
+#todaslascategorias {
+  grid-area: main; }
+
+@media (min-width: 597px) {
+  .footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem;
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.5rem; } }
+
+@media (min-width: 768px) {
+  .c-grid {
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "nav nav" "header header" "main main" "contacto contacto" "footer footer";
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "nav nav" "header header" "main main" "footer footer"; }
+  .destacados .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .destacados .container img {
+      width: 70%; }
+  .contacto {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; }
+  #componentes .productos {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center; } }
+
+@media (min-width: 1024px) {
+  .c-grid {
+    grid-template-columns: 30vw 70vw;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas: "nav nav" "header header" "main main" "contacto contacto" "footer footer"; }
+  .destacados .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; }
+    .destacados .container img {
+      width: auto; }
+  #componentes .productos {
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center; }
+    #componentes .productos figure {
+      display: flex;
+      justify-content: space-evenly;
+      width: 20%; }
+      #componentes .productos figure figcaption {
+        font-size: 1.5rem;
+        color: whitesmoke;
+        padding: 10px 0px;
+        background-color: rgba(0, 0, 0, 0.8);
+        margin-top: 5px; }
+    #componentes .productos p.price {
+      color: whitesmoke;
+      padding-bottom: 5px;
+      background-color: rgba(255, 144, 21, 0.8);
+      font-size: 1.5rem; } }
+
+@media (min-width: 1200px) {
+  .destacados .container {
+    display: flex;
+    justify-content: space-evenly; }
+    .destacados .container img {
+      width: auto; } }
+
+@media (min-width: 992px) {
+  .c-grid {
+    grid-template-columns: 20vw 80vw;
+    grid-template-rows: repeat(4, auto);
+    grid-template-areas: "nav nav" "header header" "main main" "footer footer"; } }
+
+@media (min-width: 1200px) {
+  p {
+    font-size: 1.0rem; } }
+
+h2 {
+  font-size: 3rem;
+  line-height: 2.4em;
+  color: whitesmoke;
+  padding: 4px; }
+
+h1, h2 {
+  color: whitesmoke;
+  font-family: 'Rubik', sans-serif; }
+
+h1 {
+  font-size: 2em; }
+
+h2 {
+  font-size: 1.5em; }

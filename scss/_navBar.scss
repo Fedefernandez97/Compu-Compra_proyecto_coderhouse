@@ -1,0 +1,36 @@
+$color_1: darkviolet;
+$color_2: whitesmoke;
+$background-color_1: rgba(255, 113, 21, .5);
+$background-color_2: rgba(0, 0, 0, 0.6);
+
+.botonera {
+	img {
+		width: 70px;
+	}
+}
+.navbar {
+	.navbar-nav {
+		.nav-link {
+			&:hover {
+				color: $color_1;
+				font-weight: 400;
+			}
+			color: $color_2;
+			font-size: 2.3rem;
+			margin-right: 60px;
+		}
+	}
+}
+.bg-blue {
+	background-color: $background-color_1;
+}
+.bg-pattern {
+	background-image: url(../img/index/pattern.jpg);
+	background-attachment: fixed;
+}
+header {
+	overflow-x: hidden;
+	background-color: $background-color_2;
+}
+
+
